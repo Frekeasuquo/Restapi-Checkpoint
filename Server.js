@@ -16,7 +16,7 @@ app.get('/',(req,res)=>{
 
 
 // connect to db
-mongoose.connect('mongodb+srv://Ndifreke:56QGSQBjV581BIKG@ndifrekecluster.g7obc.mongodb.net/test'
+mongoose.connect(process.env.DB_CONNECTION
 , {  useNewUrlParser: true }
 ,
 err => {
